@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #237bd3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper {
+    max-width: 490px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.075);
+}
+
+.wrapper .couter-app {
+    display: flex;
+    align-items: center;
+}
+
+.couter-app .couter-input {
+    outline: none;
+    border: 1px solid #bfbfbf;
+    border-radius: 3px;
+    padding: 10px 5px;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.couter-app .add-btn,
+.couter-app .min-btn {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 500;
+    user-select: none;
+}
+
+.couter-app .add-btn {
+    background-color: #4bc94b;
+}
+
+.couter-app .add-btn:active {
+    background-color: #43b743;
+
+}
+
+.couter-app .min-btn {
+    background: #ff5454;
+}
+
+.couter-app .min-btn:active {
+    background: #e94d4d;
+
+}

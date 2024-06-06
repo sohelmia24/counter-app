@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Couter app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="couter-app">
+                <span class="min-btn">-</span>
+                <input type="text" class="couter-input" readonly>
+                <span class="add-btn">+</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const couterInput = document.querySelector('.couter-input');
+        const addBtn = document.querySelector('.add-btn');
+        const minBtn = document.querySelector('.min-btn');
+
+
+        var i = 5;
+
+        addBtn.addEventListener("click", () => {
+            if (i < 10) {
+                i = i + 1;
+                couterInput.value = i;
+            }
+        });
+
+        minBtn.addEventListener("click", () => {
+            if (i > 1) {
+                i = i - 1;
+                couterInput.value = i;
+            }
+        });
+
+        couterInput.value = i;
+
+    </script>
+</body>
+
+</html>
